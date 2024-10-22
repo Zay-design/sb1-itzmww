@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+	  --brand-red-950: 20 61% 26%;
+	  --brand-red-900: 20 61% 37%;
+	  --brand-red-800: 20 62% 45%;
+	  --brand-red-700: 21 66% 52%;
+	  --brand-red-600: 21 84% 58%;
+	  --brand-red-500: 21 95% 61%;
+	  --brand-red-400: 15 93% 77%;
+	  --brand-red-300: 14 93% 84%;
+	  --brand-red-200: 13 92% 90%;
+	  --brand-red-100: 14 92% 95%;
+	  --brand-red-50: 10 100% 98%;
+	  --yellow-950: 47 41% 29%;
+	  --yellow-900: 47 41% 41%;
+	  --yellow-800: 47 42% 50%;
+	  --yellow-700: 47 57% 58%;
+	  --yellow-600: 47 76% 65%;
+	  --yellow-500: 47 88% 68%;
+	  --yellow-400: 46 86% 80%;
+	  --yellow-300: 45 86% 86%;
+	  --yellow-200: 44 83% 91%;
+	  --yellow-100: 43 82% 96%;
+	  --yellow-50: 42 83% 98%;
+	  --green-950: 152 56% 26%;
+	  --green-900: 152 47% 36%;
+	  --green-800: 152 46% 45%;
+	  --green-700: 152 49% 51%;
+	  --green-600: 152 62% 57%;
+	  --green-500: 151 68% 66%;
+	  --green-400: 148 65% 75%;
+	  --green-300: 147 64% 83%;
+	  --green-200: 147 61% 89%;
+	  --green-100: 145 63% 95%;
+	  --green-50: 147 60% 97%;
+	  --blue-950: 195 54% 27%;
+	  --blue-900: 195 55% 37%;
+	  --blue-800: 195 55% 46%;
+	  --blue-700: 195 62% 53%;
+	  --blue-600: 195 80% 59%;
+	  --blue-500: 196 89% 68%;
+	  --blue-400: 198 88% 77%;
+	  --blue-300: 199 88% 84%;
+	  --blue-200: 200 84% 90%;
+	  --blue-100: 201 83% 95%;
+	  --blue-50: 202 85% 97%;
+	  --brand-orange-950: 31 61% 26%;
+	  --brand-orange-900: 31 61% 36%;
+	  --brand-orange-800: 31 61% 45%;
+	  --brand-orange-700: 31 65% 52%;
+	  --brand-orange-600: 31 84% 58%;
+	  --brand-orange-500: 31 94% 61%;
+	  --brand-orange-400: 26 93% 77%;
+	  --brand-orange-300: 24 93% 84%;
+	  --brand-orange-200: 22 92% 90%;
+	  --brand-orange-100: 22 92% 95%;
+	  --brand-orange-50: 22 85% 97%;
+	  --base-white: 0 0% 98%;
+	  --base-black: 196 90% 4%;
+	  --red-950: 358 56% 26%;
+	  --red-900: 358 55% 37%;
+	  --red-800: 357 55% 46%;
+	  --red-700: 358 62% 53%;
+	  --red-600: 358 80% 59%;
+	  --red-500: 358 90% 62%;
+	  --red-400: 358 88% 77%;
+	  --red-300: 359 88% 84%;
+	  --red-200: 359 84% 90%;
+	  --red-100: 0 83% 95%;
+	  --red-50: 0 85% 97%;
+	  --gray-950: 198 20% 13%;
+	  --gray-900: 202 20% 18%;
+	  --gray-800: 198 20% 22%;
+	  --gray-700: 198 20% 25%;
+	  --gray-600: 200 21% 29%;
+	  --gray-500: 199 20% 30%;
+	  --gray-400: 202 5% 58%;
+	  --gray-300: 206 5% 71%;
+	  --gray-200: 210 4% 82%;
+	  --gray-100: 210 5% 91%;
+	  --gray-50: 240 4% 95%;
+	  --ConnectRed-950: 10 52% 26%;
+	  --ConnectRed-900: 10 52% 37%;
+	  --ConnectRed-800: 10 52% 45%;
+	  --ConnectRed-700: 10 56% 52%;
+	  --ConnectRed-600: 10 71% 58%;
+	  --ConnectRed-500: 10 80% 61%;
+	  --ConnectRed-400: 7 77% 76%;
+	  --ConnectRed-300: 7 74% 83%;
+	  --ConnectRed-200: 6 74% 89%;
+	  --ConnectRed-100: 7 69% 95%;
+	  --ConnectRed-50: 6 71% 97%;
+ 
+    --radius: 0.5rem;
+ 
+    --sidebar-background: 0 0% 98%;
+ 
+    --sidebar-foreground: 240 5.3% 26.1%;
+ 
+    --sidebar-primary: 240 5.9% 10%;
+ 
+    --sidebar-primary-foreground: 0 0% 98%;
+ 
+    --sidebar-accent: 240 4.8% 95.9%;
+ 
+    --sidebar-accent-foreground: 240 5.9% 10%;
+ 
+    --sidebar-border: 220 13% 91%;
+ 
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+
+
+	  --background: var(--base-white);
+	  --foreground: var(--gray-950);
+	  --muted: var(--gray-50);
+	  --muted-foreground: var(--gray-500);
+	  --card: var(--base-white);
+	  --card-foreground: var(--gray-950);
+	  --popover: var(--base-white);
+	  --popover-foreground: var(--gray-950);
+	  --border: var(--gray-200);
+	  --input: var(--gray-200);
+	  --primary: var(--ConnectRed-500);
+	  --primary-foreground: var(--base-white);
+	  --secondary: var(--gray-100);
+	  --secondary-foreground: var(--gray-950);
+	  --accent: var(--brand-orange-500);
+	  --accent-foreground: var(--brand-orange-50);
+	  --destructive: var(--red-500);
+	  --destructive-foreground: var(--base-white);
+	  --ring: var(--undefined);
+	  --hover-primary: var(--ConnectRed-900);
+	  --hover-secondary: var(--gray-200);
+	  --hover-destructive: var(--red-600);
+	  --success: var(--green-500);
+	  --hover-succes: var(--green-600);
+	  --destructive-subtle: var(--red-50);
+	  --hover-destructive-20: var(--red-100);
+	  --bg-muted-50: 210 40% 96%;
+	  --bg-accent-50: 210 40% 96%;
+	  --bg-muted-40: 210 40% 96%;
+	  --border-muted: var(--gray-100);
+	  --destructive-subtle-foreground: var(--red-950);
+	  --success-foreground: var(--base-white);
+	  --success-subtle: var(--green-50);
+	  --success-subtle-foreground: var(--green-950);
+	  --hover-succes-subtle: var(--green-100);
+	  --info: var(--blue-500);
+	  --info-foreground: var(--base-white);
+	  --hover-info: var(--blue-600);
+	  --info-subtle: var(--blue-50);
+	  --info-subtle-foreground: var(--blue-950);
+	  --hover-info-subtle: var(--blue-100);
+	  --warning: var(--yellow-500);
+	  --warning-foreground: var(--base-white);
+	  --hover-warning: var(--yellow-600);
+	  --warning-subtle: var(--yellow-50);
+	  --warning-subtle-foreground: var(--yellow-950);
+	  --hover-warning-subtle: var(--yellow-100);
+  }
+
+
+.dark {
+	  --background: var(--base-black);
+	  --foreground: var(--gray-50);
+	  --muted: 199 20% 30%;
+	  --muted-foreground: var(--gray-400);
+	  --card: var(--base-black);
+	  --card-foreground: var(--gray-50);
+	  --popover: var(--base-black);
+	  --popover-foreground: var(--gray-50);
+	  --border: var(--gray-800);
+	  --input: var(--gray-700);
+	  --primary: var(--ConnectRed-600);
+	  --primary-foreground: var(--base-white);
+	  --secondary: var(--gray-900);
+	  --secondary-foreground: var(--gray-50);
+	  --accent: var(--brand-orange-600);
+	  --accent-foreground: var(--undefined);
+	  --destructive: var(--undefined);
+	  --destructive-foreground: var(--base-white);
+	  --ring: var(--undefined);
+	  --hover-primary: var(--ConnectRed-700);
+	  --hover-secondary: var(--gray-800);
+	  --hover-destructive: var(--red-600);
+	  --success: var(--undefined);
+	  --hover-succes: var(--green-700);
+	  --destructive-subtle: 358 90% 62%;
+	  --hover:destructive-20: 358 90% 62%;
+	  --bg-muted-50: 217 33% 17%;
+	  --bg-accent-50: 217 33% 17%;
+	  --bg-muted-40: 217 33% 17%;
+	  --border-muted: var(--gray-900);
+	  --destructive-subtle-foreground: var(--red-50);
+	  --success-foreground: var(--base-white);
+	  --success-subtle: 142 76% 36%;
+	  --success-subtle-foreground: var(--green-50);
+	  --hover:succes-subtle: 142 76% 36%;
+	  --info: var(--blue-600);
+	  --info-foreground: var(--base-white);
+	  --hover-info: var(--blue-700);
+	  --info-subtle: 195 80% 59%;
+	  --info-subtle-foreground: var(--blue-50);
+	  --hover:info-subtle: 195 80% 59%;
+	  --warning: var(--yellow-600);
+	  --warning-foreground: var(--base-white);
+	  --hover-warning: var(--yellow-700);
+	  --warning-subtle: 47 76% 65%;
+	  --warning-subtle-foreground: var(--yellow-50);
+	  --hover-warning-subtle: 47 76% 65%;
+	  --sidebar-background: 240 5.9% 10%;
+	  --sidebar-foreground: 240 4.8% 95.9%;
+	  --sidebar-primary: 224.3 76.3% 48%;
+	  --sidebar-primary-foreground: 0 0% 100%;
+	  --sidebar-accent: 240 3.7% 15.9%;
+	  --sidebar-accent-foreground: 240 4.8% 95.9%;
+	  --sidebar-border: 240 3.7% 15.9%;
+	  --sidebar-ring: 217.2 91.2% 59.8%;
+	}
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
